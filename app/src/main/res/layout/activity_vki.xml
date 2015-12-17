@@ -35,11 +35,13 @@
         android:layout_height="wrap_content"
         android:text="Hesapla"
         android:id="@+id/btnHesapla"
-        android:layout_below="@+id/editTextKilo"
-        android:layout_alignRight="@+id/editTextKilo"
-        android:layout_alignEnd="@+id/editTextKilo"
         android:textStyle="bold"
-        android:background="@drawable/blue_button" />
+        android:background="@drawable/blue_button"
+        android:textSize="22dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/checkKadin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -105,4 +107,22 @@
         android:layout_alignRight="@+id/textViewVki"
         android:layout_alignEnd="@+id/textViewVki"
         android:textColor="#000000" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kadin"
+        android:id="@+id/checkKadin"
+        android:layout_below="@+id/editTextKilo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Erkek"
+        android:id="@+id/checkErkek"
+        android:layout_alignTop="@+id/checkKadin"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
 </RelativeLayout>
