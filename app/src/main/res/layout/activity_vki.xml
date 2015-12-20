@@ -10,6 +10,18 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/editTextBoy"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:focusable="true"
+        android:hint="Boyunuz (cm)" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
         android:id="@+id/editTextKilo"
@@ -17,18 +29,10 @@
         android:autoText="false"
         android:layout_below="@+id/editTextBoy"
         android:layout_alignParentLeft="true"
+
         android:hint="Kilonuz" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="numberSigned"
-        android:ems="10"
-        android:id="@+id/editTextBoy"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="Boyunuz (cm)" />
+
 
     <Button
         android:layout_width="match_parent"
@@ -41,7 +45,8 @@
         android:textColor="#ffffff"
         android:layout_below="@+id/checkKadin"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="İdeal Kilonuz: "
-        android:id="@+id/textView"
+        android:id="@+id/textViewIdealKilo"
         android:layout_below="@+id/textViewVki"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -69,8 +74,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Seviyeniz:"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
+        android:id="@+id/textViewSeviyeniz"
+        android:layout_below="@+id/textViewIdealKilo"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textColor="#000000"
@@ -79,34 +84,37 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="socuç"
+        android:text="Sonuç"
         android:id="@+id/textVkiSonuc"
-        android:layout_centerVertical="true"
+        android:textColor="#e70c10"
+        android:layout_above="@+id/textViewIdealKilo"
         android:layout_toRightOf="@+id/textViewVki"
         android:layout_toEndOf="@+id/textViewVki"
-        android:textColor="#e70c10" />
+        android:textSize="18dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="socuç"
+        android:text="Sonuç"
         android:id="@+id/textIdealKiloSonuc"
-        android:layout_alignBottom="@+id/textView"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView"
-        android:textColor="#000000" />
+        android:layout_alignBottom="@+id/textViewIdealKilo"
+        android:layout_toRightOf="@+id/textViewIdealKilo"
+        android:layout_toEndOf="@+id/textViewIdealKilo"
+        android:textColor="#000000"
+        android:textSize="16dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="socuç"
+        android:text="Socuç"
         android:id="@+id/textSeviyenizSonuc"
         android:layout_gravity="center"
         android:phoneNumber="false"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignRight="@+id/textViewVki"
-        android:layout_alignEnd="@+id/textViewVki"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/textViewSeviyeniz"
+        android:layout_toRightOf="@+id/checkErkek"
+        android:layout_toEndOf="@+id/checkErkek"
+        android:textSize="14dp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -115,7 +123,9 @@
         android:id="@+id/checkKadin"
         android:layout_below="@+id/editTextKilo"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="#ff0a0a"
+        android:checked="true" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -123,6 +133,7 @@
         android:text="Erkek"
         android:id="@+id/checkErkek"
         android:layout_alignTop="@+id/checkKadin"
-        android:layout_toRightOf="@+id/textView2"
-        android:layout_toEndOf="@+id/textView2" />
+        android:layout_toRightOf="@+id/textViewSeviyeniz"
+        android:layout_toEndOf="@+id/textViewSeviyeniz"
+        android:textColor="#0f6aa3" />
 </RelativeLayout>
