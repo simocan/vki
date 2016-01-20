@@ -20,7 +20,7 @@ public class SplashScreen extends Activity {
         setContentView(R.layout.activity_splash);
 
         Timer timer=new Timer();
-        timer.schedule(new MyTask(), 3000);
+        timer.schedule(new MyTask(), 5000);
     }
 
 

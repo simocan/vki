@@ -93,11 +93,11 @@ public class vki extends AppCompatActivity {
                     vki = new BigDecimal(deger).setScale(2, BigDecimal.ROUND_HALF_UP) + "";
 
                     textVkiSonuc.setText(vki);
-                    //TODO erkekte -104 - bayanda -108 çıkartılacak.
+                    //TODO erkekte -104 - bayanda -108 cikarilacak
 
                     int idealKilo = getIdealKilo(boy);
 
-                    textIdealKilo.setText("" + idealKilo);
+                    textIdealKilo.setText("" + idealKilo + " Kg");
 
                     // TODO vki sonuclari
                     String mesaj = "" + getVkiMessage(deger);
@@ -115,7 +115,7 @@ public class vki extends AppCompatActivity {
                 } else {
 
                     Context context = getApplicationContext();
-                    Toast.makeText(context, "Lütfen Verileri Eksiksiz Giriniz !!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, "Lütfen boy ve kilo bilginizi giriniz!", Toast.LENGTH_LONG).show();
                 }
 
 

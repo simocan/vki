@@ -90,7 +90,7 @@
         android:layout_above="@+id/textViewIdealKilo"
         android:layout_toRightOf="@+id/textViewVki"
         android:layout_toEndOf="@+id/textViewVki"
-        android:textSize="18dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -101,7 +101,7 @@
         android:layout_toRightOf="@+id/textViewIdealKilo"
         android:layout_toEndOf="@+id/textViewIdealKilo"
         android:textColor="#000000"
-        android:textSize="16dp" />
+        android:textSize="18dp" />
 
     <TextView
         android:layout_width="wrap_content"
